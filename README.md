@@ -82,7 +82,7 @@ Package Manager
   `adb shell pm revoke <your.package.name> <permission>`
 
 
-Performance Profiling
+Profiling
 ---------------------
 
 - **Frame profiling**
@@ -112,8 +112,20 @@ Performance Profiling
 
   `adb shell am dumpheap <your.package.name> /sdcard/dumpheap.hprof`
   
+- **Layout Borders**
+
+  `adb shell setprop debug.layout <true/false>`
+  
+  You have to relaunch your application to see the borders. 
+  
 Miscellaneous
 -------------
+
+- **Kill Application**
+
+  `adb shell am kill <your.package.name>`
+  
+  Simulates the application being killed for memory pressure. Only works if the application is placed into the background first by pressing the home button.
 
 - **Immersive Mode**
   
