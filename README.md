@@ -80,6 +80,10 @@ Package Manager
 - **Revoke Permissions**
 
   `adb shell pm revoke <your.package.name> <permission>`
+  
+- **To Clear Application Data & Cache**
+
+  `adb shell pm clear <your.package.name>`
 
 
 Profiling
