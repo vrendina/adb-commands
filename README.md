@@ -81,7 +81,8 @@ Package Manager
 
   `adb shell pm revoke <your.package.name> <permission>`
   
-- **To clear Application data & Cache**
+- **To clear Application Data & Cache**
+
   `adb shell pm clear <your.package.name>`
 
 
