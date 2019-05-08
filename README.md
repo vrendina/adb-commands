@@ -54,10 +54,10 @@ Display
   
   `adb shell wm density reset`
 
-Properties
-----------
+Properties & Settings
+---------------------
 
-- **Get properties**
+- **Get Properties**
 
   `adb shell getprop [property]`
   
@@ -65,6 +65,16 @@ Properties
   - `ro.build.version.release` release version of OS
   - `ro.product.cpu.abi` cpu architecture, for example arm64-v8a
   - `ro.product.cpu.abilist` all supported cpu architectures
+  
+- **Get Settings**
+
+  `adb shell settings get <namespace> <key>`
+  
+  Possible `<namespace>` values are `system`, `secure`, `global`. List of keys are available in the [documentation](https://developer.android.com/reference/android/provider/Settings.NameValueTable.html).
+  
+- **Update Settings**
+
+  `adb shell settings put <namespace> <key> <value>`
 
 Package Manager
 ---------------
